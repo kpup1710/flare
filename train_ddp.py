@@ -90,7 +90,7 @@ def parse_args():
     parser.add_argument('--save_model', default=False, action='store_true')
     parser.add_argument('--log_interval', default=100, type=int)
     # DistributeDataParallel + PyTorch launcher utility.
-    parser.add_argument('--local_rank', default=0, type=int)
+    parser.add_argument('--local-rank', default=0, type=int)
     parser.add_argument('--print_param_check', default=False, action='store_true')
 
     args = parser.parse_args()
