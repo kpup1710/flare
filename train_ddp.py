@@ -20,7 +20,7 @@ from sac_ddp import RadSacAgentDDP
 from torchvision import transforms
 import data_augs as rad
 import os
-os.environ["MUJOCO_GL"] = "egl"
+os.environ["MUJOCO_GL"] = "osmesa"
 import torch.distributed
 
 def center_crop_images(image, output_size):
